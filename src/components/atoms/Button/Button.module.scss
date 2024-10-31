@@ -1,0 +1,43 @@
+$color: #ff5600;
+$hover: #c40;
+$hover_outline: #fff3ed;
+
+.button {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 15px;
+	color: #fff;
+	border: 1px solid $color;
+    background-color: $color;
+    border-radius: 3px;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+	white-space: nowrap;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+    text-transform: uppercase;
+    transition: all .25s ease;
+
+    &:hover {
+        background-color: $hover;
+    }
+    
+    > svg {
+        margin-left: 8px;
+        margin-bottom: 1px;
+    }
+
+    &__outline {
+        background-color: #fff;
+        color: $color;
+
+        &:hover {
+            color: $color;
+            background-color: $hover_outline;
+        }
+    }
+}

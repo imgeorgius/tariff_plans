@@ -1,0 +1,18 @@
+.filters__row {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+
+    select {
+        width: 250px;
+    }
+
+    @media (max-width: 576px) {
+        flex-wrap: wrap;
+        
+        select {
+            width: 100%;
+        }
+    }
+}
