@@ -1,3 +1,5 @@
+import classNames from "classnames";
+
 import styles from "./Select.module.scss";
 
 type Option = {
@@ -7,10 +9,17 @@ type Option = {
 
 interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   options: Option[];
+  placeholder?: string;
 }
 
-const Select = ({ options, ...props }: SelectProps) => (
-  <select className={styles.select} {...props}>
+const Select: React.FC<SelectProps> = ({
+  options,
+  className,
+  placeholder,
+  ...props
+}) => (
+  <select className={classNames(styles.select, className)} {...props}>
+    {placeholder && <option>{placeholder}</option>}
     {options.map(({ value, label }) => (
       <option key={value} value={value}>
         {label}

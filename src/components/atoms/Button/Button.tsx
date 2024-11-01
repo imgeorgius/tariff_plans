@@ -23,12 +23,12 @@ const Button = ({
   return (
     <button
       className={classNames(
-        className,
         styles.button,
         styles[`button__${size}`],
         {
           [styles.button__outline]: outline,
-        }
+        },
+        className
       )}
       {...rest}
     >

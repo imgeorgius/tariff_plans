@@ -14,7 +14,7 @@ const Spinner = ({
   className,
   width = 20,
   height = 20,
-  color,
+  color = "#ff5600",
 }: SpinnerProps) => (
   <FontAwesomeIcon
     className={`${styles.spinnerLoader} ${className ? className : ""}`}

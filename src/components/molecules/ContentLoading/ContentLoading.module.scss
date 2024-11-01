@@ -1,0 +1,29 @@
+.loading__overlay {
+  position: relative;
+
+  svg {
+    display: none;
+  }
+
+  &--loading {
+    opacity: 0.7;
+
+    svg {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: calc(50% - 18px);
+        z-index: 55;
+    }
+}
+}
+
+.loading__wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+
+  &__error {
+    text-align: center;
+  }
+}

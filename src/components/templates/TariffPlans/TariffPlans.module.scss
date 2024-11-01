@@ -8,6 +8,12 @@
         width: 250px;
     }
 
+    @media (max-width: 768px) {
+        button {
+            display: none;
+        }
+    }
+
     @media (max-width: 576px) {
         flex-wrap: wrap;
         
