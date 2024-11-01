@@ -6,7 +6,7 @@ import styles from "./TariffPlans.module.scss";
 import { useState } from "react";
 import ContentLoading from "@/components/molecules/ContentLoading/ContentLoading";
 import Button from "@/components/atoms/Button";
-import { Filter, Sort, filterOptions, sortOptions } from "@/constants/Tariffs";
+import { filterOptions, sortOptions } from "@/constants/Tariffs";
 import { useTariffsFiltered } from "./hooks";
 
 type TariffPlansProps = {

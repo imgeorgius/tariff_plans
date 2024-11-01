@@ -27,10 +27,10 @@ export type SortOption = {
 
 export const filterOptions: FilterOption[] = [
   { value: Filter.PRICE_UNDER_300, label: "Price under 300€" },
-  { value: Filter.DOWNLOAD_100, label: "Download speed > 100 Mbit/s" },
-  { value: Filter.DOWNLOAD_200, label: "Download speed > 200 Mbit/s" },
-  { value: Filter.UPLOAD_50, label: "Upload speed > 50 Mbit/s" },
-  { value: Filter.UPLOAD_100, label: "Upload speed > 100 Mbit/s" },
+  { value: Filter.DOWNLOAD_100, label: "Download speed >= 100 Mbit/s" },
+  { value: Filter.DOWNLOAD_200, label: "Download speed >= 200 Mbit/s" },
+  { value: Filter.UPLOAD_50, label: "Upload speed >= 50 Mbit/s" },
+  { value: Filter.UPLOAD_100, label: "Upload speed >= 100 Mbit/s" },
 ];
 
 export const sortOptions: SortOption[] = [
